@@ -17,7 +17,9 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
 import FileOpenIcon from '@mui/icons-material/FileOpen';
 import AddIcCallIcon from '@mui/icons-material/AddIcCall';
-import sakibImage from '../../../assets/Images/sakib-bg-remove.png'
+import sakibImage from '../../../assets/Images/sakib-insta.png'
+import resume from '../../../assets/Files/resume.pdf'
+import sakibLogo from '../../../assets/Images/sklogo.png'
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -61,24 +63,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 
 const Navbar = () => {
-    const onButtonClick = () => {
-     
-        // using Java Script method to get PDF file
-        fetch("/resume.pdf").then((response) => {
-            response.blob().then((blob) => {
-             
-                // Creating new object of PDF file
-                const fileURL =
-                    window.URL.createObjectURL(blob);
-                     
-                // Setting various property values
-                let alink = document.createElement("a");
-                alink.href = fileURL;
-                alink.download = "resume.pdf";
-                alink.click();
-            });
-        });
-    };
+  
     const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
 
@@ -177,8 +162,8 @@ const Navbar = () => {
   );
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+    <Box className="sticky z-10" sx={{ flexGrow: 1 }}>
+      <AppBar position="static" sx={{ backgroundColor: alpha('#2196f3', 0.9) }}>
         <Toolbar>
           <IconButton
             size="large"
@@ -195,7 +180,7 @@ const Navbar = () => {
             component="div"
             sx={{ display: { xs: 'none', sm: 'block' } }}
           >
-            <h1 className='font-mono'>Sakib Uz Zaman</h1>
+            <img className='w-40 h-20' src={sakibLogo} alt="" />
           </Typography>
           <Search>
             <SearchIconWrapper>
@@ -210,7 +195,9 @@ const Navbar = () => {
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
             <IconButton size="large" aria-label="show 4 new mails" color="inherit">
               <Badge>          
-                <button  className='flex items-center gap-2' onClick={onButtonClick}><FileOpenIcon /><small className='text-sm'>Resume</small></button>
+                <a href={resume} download='Resume'>
+                <button  className='flex items-center gap-2'><FileOpenIcon /><small className='text-sm'>Resume</small></button>
+                </a>
               </Badge>
             </IconButton>
             <IconButton

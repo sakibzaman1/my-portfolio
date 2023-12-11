@@ -26,7 +26,7 @@ const Banner = () => {
               <div className="relative">
         {/* Video */}
        <div>
-       <video autoPlay loop muted className="opacity-80 w-full banner-video">
+       <video autoPlay loop muted className="opacity-90 w-full banner-video">
           <source src={bannerVideo} type="video/mp4" />
         </video>
        </div>

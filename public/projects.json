@@ -1,0 +1,30 @@
+[
+    {
+      "id": 1,
+      "projectTitle": "Fashion Savvy",
+      "projectLogo": "https://i.postimg.cc/xjJKJbGy/Fashion-savvy-logo-no-Bg.png",
+      "projectImages": ["screenshot1.png", "screenshot2.png", "screenshot3.png"],
+      "projectDetails": "A responsive web application built using React for seamless user interactions.",
+      "technologies": ["React", "JavaScript", "CSS", "HTML"],
+      "duration": "2 months"
+    },
+    {
+      "id": 2,
+      "projectTitle": "Soul Fit Connect",
+      "projectLogo": "https://i.ibb.co/cXFNP7Z/Soul-Fit-Connect-horizontal-logo-removebg-preview.png",
+      "projectImages": ["product1.png", "product2.png", "product3.png"],
+      "projectDetails": "Developed a feature-rich e-commerce platform with secure payment gateways and user-friendly design.",
+      "technologies": ["Node.js", "Express", "React", "MongoDB"],
+      "duration": "4 months"
+    },
+    {
+      "id": 3,
+      "projectTitle": "Tourist Guide BD",
+      "projectLogo": "https://i.ibb.co/h2x7d3k/tourist-Guide-removebg-preview.png",
+      "projectImages": ["portfolio1.png", "portfolio2.png", "portfolio3.png"],
+      "projectDetails": "Designed and implemented a personal portfolio website to showcase skills and projects.",
+      "technologies": ["HTML", "CSS", "JavaScript", "React"],
+      "duration": "1 month"
+    }
+  ]
+  
