@@ -4,27 +4,33 @@
       "projectTitle": "Fashion Savvy",
       "projectLogo": "https://i.postimg.cc/xjJKJbGy/Fashion-savvy-logo-no-Bg.png",
       "projectImages": ["screenshot1.png", "screenshot2.png", "screenshot3.png"],
-      "projectDetails": "A responsive web application built using React for seamless user interactions.",
+      "projectDetails": "A Fashion & Apparel website for exploring thousands of products under some renowned brands.",
       "technologies": ["React", "JavaScript", "CSS", "HTML"],
-      "duration": "2 months"
+      "duration": "2 Days",
+      "LiveLink": "https://fashion-savvy-sakib.netlify.app/",
+      "githubLink" : "https://github.com/sakibzaman1/brand-shop"
     },
     {
       "id": 2,
       "projectTitle": "Soul Fit Connect",
       "projectLogo": "https://i.ibb.co/cXFNP7Z/Soul-Fit-Connect-horizontal-logo-removebg-preview.png",
       "projectImages": ["product1.png", "product2.png", "product3.png"],
-      "projectDetails": "Developed a feature-rich e-commerce platform with secure payment gateways and user-friendly design.",
+      "projectDetails": "An offline service sharing web application for providing fitness guidelines to the people, sincere about their own health & fitness.",
       "technologies": ["Node.js", "Express", "React", "MongoDB"],
-      "duration": "4 months"
+      "duration": "4 Days",
+      "LiveLink": "https://soul-fit-connect-sakib.netlify.app/",
+      "githubLink" : "https://github.com/sakibzaman1/soul-fit-connect"
     },
     {
       "id": 3,
       "projectTitle": "Tourist Guide BD",
       "projectLogo": "https://i.ibb.co/h2x7d3k/tourist-Guide-removebg-preview.png",
       "projectImages": ["portfolio1.png", "portfolio2.png", "portfolio3.png"],
-      "projectDetails": "Designed and implemented a personal portfolio website to showcase skills and projects.",
+      "projectDetails": "An online platform that provides comprehensive information and resources for travelers seeking guidance on popular destinations in Bangladesh.",
       "technologies": ["HTML", "CSS", "JavaScript", "React"],
-      "duration": "1 month"
+      "duration": "4 Days",
+      "LiveLink": "https://tourist-guide-sakib.netlify.app/",
+      "githubLink" : "https://github.com/sakibzaman1/tourist-guide-bd"
     }
   ]
   

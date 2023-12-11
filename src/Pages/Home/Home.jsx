@@ -6,6 +6,9 @@ import About from '../../Components/About/About';
 import Skills from '../../Components/Skills/Skills';
 import Projects from '../../Components/Projects/Projects';
 import { useLoaderData } from 'react-router-dom';
+import blueBg from '../../assets/Images/bg-blue.jpg'
+import ContactForm from '../../Components/ContactForm/ContactForm';
+import Education from '../../Components/Education/Education';
 
 const Home = () => {
 
@@ -13,20 +16,27 @@ const Home = () => {
   console.log(projects)
 
     return (
-      <div className='bg-slate-200'>
+      <div className="">
         <section>
         <Banner></Banner>
         </section>
-        <section>
+      <div className='text-white pb-20' style={{ backgroundImage: `url(${blueBg})`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}>
+      <section>
           <About></About>
         </section>
-        <hr />
         <section>
           <Skills></Skills>
         </section>
         <section>
           <Projects></Projects>
         </section>
+        <section>
+          <Education></Education>
+        </section>
+        <section>
+          <ContactForm></ContactForm>
+        </section>
+      </div>
       </div>
       
     );

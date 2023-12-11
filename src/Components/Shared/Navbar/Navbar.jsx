@@ -20,6 +20,7 @@ import AddIcCallIcon from '@mui/icons-material/AddIcCall';
 import sakibImage from '../../../assets/Images/sakib-insta.png'
 import resume from '../../../assets/Files/resume.pdf'
 import sakibLogo from '../../../assets/Images/sklogo.png'
+import InfoIcon from '@mui/icons-material/Info';
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -69,6 +70,19 @@ const Navbar = () => {
 
   const isMenuOpen = Boolean(anchorEl);
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
+
+  const scrollToAbout = () => {
+    const aboutSection = document.getElementById('about');
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+  const scrollToContact = () => {
+    const aboutSection = document.getElementById('contact');
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   const handleProfileMenuOpen = (event) => {
     setAnchorEl(event.currentTarget);
@@ -204,10 +218,23 @@ const Navbar = () => {
               size="large"
               aria-label="show 17 new notifications"
               color="inherit"
+              onClick={scrollToContact}
             >
               <Badge className='flex items-center gap-2'>
                 <AddIcCallIcon /><small className='text-sm'>Contact</small>
               </Badge>
+            </IconButton>
+            <IconButton
+              size="large"
+              aria-label="show 17 new notifications"
+              color="inherit"
+              onClick={scrollToAbout}
+            >
+              
+              <Badge className='flex items-center gap-2'>
+                <InfoIcon /><small className='text-sm'>About</small>
+              </Badge>
+              
             </IconButton>
             <IconButton
               size="large"
