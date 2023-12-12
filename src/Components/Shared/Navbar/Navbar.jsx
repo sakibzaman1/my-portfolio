@@ -118,8 +118,8 @@ const Navbar = () => {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      <MenuItem onClick={handleMenuClose}>Profileeee</MenuItem>
-      <MenuItem onClick={handleMenuClose}>My account</MenuItem>
+      <MenuItem onClick={handleMenuClose}>Hire Me</MenuItem>
+      <MenuItem onClick={handleMenuClose}>Let's Collaborate</MenuItem>
     </Menu>
   );
 
@@ -143,10 +143,12 @@ const Navbar = () => {
       <MenuItem>
         <IconButton size="large" aria-label="show 4 new mails" color="inherit">
           <Badge>
-            <FileOpenIcon/>
+          <a href={resume} download='Resume'>
+                <button  className='flex items-center gap-2'><FileOpenIcon /><small className='text-sm'>Resume</small></button>
+                </a>
           </Badge>
         </IconButton>
-        <p>Resume</p>
+        
       </MenuItem>
       <MenuItem>
         <IconButton

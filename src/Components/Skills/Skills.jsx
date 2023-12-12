@@ -24,16 +24,16 @@ const Skills = () => {
         <div className='my-20'>
             <h1 className="text-5xl text-left pl-12 pb-6" data-aos="fade-down" data-aos-delay="100"  data-aos-duration="2000">My Skill Set</h1>
             
-            <section className='lg:flex gap-4 mt-14 px-8 mx-auto justify-center'>
-                <img className='lg:w-28  border-gray-300'  data-aos="fade-right" data-aos-delay="100"  data-aos-duration="1000" src={react} alt="" />
-                <img className='lg:w-28  border-gray-300'  data-aos="fade-right" data-aos-delay="200"  data-aos-duration="1000" src={nodejs} alt="" />
-                <img className='lg:w-28  border-gray-300'  data-aos="fade-right" data-aos-delay="300"  data-aos-duration="1000" src={express} alt="" />
-                <img className='lg:w-28  border-gray-300'  data-aos="fade-right" data-aos-delay="400"  data-aos-duration="1000" src={mongodb} alt="" />
-                <img className='lg:w-28  border-gray-300'  data-aos="zoom-in" data-aos-delay="800"  data-aos-duration="1000" src={html5} alt="" />
-                <img className='lg:w-28  border-gray-300'  data-aos="fade-left" data-aos-delay="400"  data-aos-duration="1000" src={css3} alt="" />
-                <img className='lg:w-28  border-gray-300'  data-aos="fade-left" data-aos-delay="300"  data-aos-duration="1000" src={js} alt="" />
-                <img className='lg:w-28  border-gray-300'  data-aos="fade-left" data-aos-delay="200"  data-aos-duration="1000" src={firebase} alt="" />
-                <img className='lg:w-28  border-gray-300'  data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000"  src={tailwind} alt="" />
+            <section className='lg:flex gap-8 mt-14 px-8 mx-auto justify-center'>
+                <img className='lg:w-24  border-gray-300 rounded-full boder-4'  data-aos="fade-right" data-aos-delay="100"  data-aos-duration="1000" src={react} alt="" />
+                <img className='lg:w-24  border-gray-300 rounded-full boder-4'  data-aos="fade-right" data-aos-delay="200"  data-aos-duration="1000" src={nodejs} alt="" />
+                <img className='lg:w-24  border-gray-300 rounded-full boder-4'  data-aos="fade-right" data-aos-delay="300"  data-aos-duration="1000" src={express} alt="" />
+                <img className='lg:w-24  border-gray-300 rounded-full boder-4'  data-aos="fade-right" data-aos-delay="400"  data-aos-duration="1000" src={mongodb} alt="" />
+                <img className='lg:w-24  border-gray-300 rounded-full boder-4'  data-aos="zoom-in" data-aos-delay="800"  data-aos-duration="1000" src={html5} alt="" />
+                <img className='lg:w-24  border-gray-300 rounded-full boder-4'  data-aos="fade-left" data-aos-delay="400"  data-aos-duration="1000" src={css3} alt="" />
+                <img className='lg:w-24  border-gray-300 rounded-full boder-4'  data-aos="fade-left" data-aos-delay="300"  data-aos-duration="1000" src={js} alt="" />
+                <img className='lg:w-24  border-gray-300 rounded-full boder-4'  data-aos="fade-left" data-aos-delay="200"  data-aos-duration="1000" src={firebase} alt="" />
+                <img className='lg:w-24  border-gray-300 rounded-full boder-4'  data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000"  src={tailwind} alt="" />
             </section>
         </div>
     );

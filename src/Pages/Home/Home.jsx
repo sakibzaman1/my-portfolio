@@ -9,6 +9,7 @@ import { useLoaderData } from 'react-router-dom';
 import blueBg from '../../assets/Images/bg-blue.jpg'
 import ContactForm from '../../Components/ContactForm/ContactForm';
 import Education from '../../Components/Education/Education';
+import Experience from '../../Components/Experience/Experience';
 
 const Home = () => {
 
@@ -32,6 +33,9 @@ const Home = () => {
         </section>
         <section>
           <Education></Education>
+        </section>
+        <section>
+          <Experience></Experience>
         </section>
         <section>
           <ContactForm></ContactForm>

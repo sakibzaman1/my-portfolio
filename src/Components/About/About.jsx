@@ -17,7 +17,7 @@ const About = () => {
       <div className="lg:w-[70%]   p-4">
         <h1 className="text-7xl mb-6" data-aos="fade-right" data-aos-delay="100"  data-aos-duration="2000">About Me</h1>
         <p className="text-xl px-4">
-          <Typewriter random={30} delay={10} speed={60} text="Hey, I'm MD.SAKIB UZ ZAMAN, a budding React web developer. Passionate
+          <Typewriter random={30} delay={10} speed={80} text="Hey, I'm MD.SAKIB UZ ZAMAN, a budding React web developer. Passionate
           about crafting seamless user interfaces, I thrive on turning concepts
           into interactive experiences. Proficient in HTML, CSS, and JavaScript,
           I've embraced React for its modular brilliance. Eager to learn and
