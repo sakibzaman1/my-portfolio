@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import sakibImage from "../../assets/Images/sakib-blue.png";
+import sakibImage from "../../assets/Images/Myself.jpeg";
 import Typewriter from "react-ts-typewriter";
 import AOS from "aos";
 import "aos/dist/aos.css";

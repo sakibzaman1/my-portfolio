@@ -16,7 +16,7 @@ const Education = () => {
 
     return (
         <div className='mt-20 mb-40'>
-            <h1 className='hidden lg:flex text-left pl-16 text-5xl mb-10' data-aos="fade-right" data-aos-delay="100"  data-aos-duration="4000">Education</h1>
+            <h1 className='hidden lg:flex justify-center py-2 pl-16 text-5xl mb-10 bg-gradient-to-r from-transparent via-gray-300 to-transparent text-black' data-aos="fade-right" data-aos-delay="100"  data-aos-duration="1000">Education</h1>
             <div className="stats hidden lg:flex mx-10 shadow" data-aos="fade-right" data-aos-delay="100"  data-aos-duration="2000">
   
   <div className="stat " data-aos="fade-right" data-aos-delay="100"  data-aos-duration="2000">

@@ -21,7 +21,7 @@ const Home = () => {
         <section>
         <Banner></Banner>
         </section>
-      <div className='text-white pb-20' style={{ backgroundImage: `url(${blueBg})`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}>
+      <div className='text-black pb-20' >
       <section>
           <About></About>
         </section>

@@ -22,7 +22,7 @@ const Skills = () => {
 
     return (
         <div className='my-20'>
-            <h1 className="text-5xl text-left pl-12 pb-6" data-aos="fade-down" data-aos-delay="100"  data-aos-duration="2000">My Skill Set</h1>
+            <h1 className="text-3xl pl-12 mx-auto lg:text-5xl mb-10 px-10 py-2  bg-gradient-to-r from-transparent via-gray-300 to-transparent text-black text-center" data-aos="fade-down" data-aos-delay="100"  data-aos-duration="2000">My Skill Set</h1>
             
             <section className='lg:flex gap-8 mt-14 px-8 mx-auto justify-center'>
                 <img className='lg:w-24  border-gray-300 rounded-full boder-4'  data-aos="fade-right" data-aos-delay="100"  data-aos-duration="1000" src={react} alt="" />

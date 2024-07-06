@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import bannerVideo from '../../assets/videos/banner2.mp4'
+import bannerVideo from '../../assets/videos/banner3.mp4'
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -31,11 +31,11 @@ const Banner = () => {
         </video>
        </div>
       
-       <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center gap-10">
+       <div className="absolute top-40 bottom-10 w-full h-full justify-center pl-96 flex gap-10">
     {/* Name div */}
     <div className="text-black ">
-      <h1 className='lg:text-9xl text-4xl font-bold text-white'  data-aos="fade-right" data-aos-duration="2000">MD. SAKIB UZ ZAMAN</h1>
-      <p className='lg:text-3xl text-gray-400' data-aos="fade-left" data-aos-duration="2000">Junior Web Developer</p>
+      <h1 className='lg:text-7xl text-2xl font-bold text-gray-500'  data-aos="fade-right" data-aos-duration="2000">MD. SAKIB UZ ZAMAN</h1>
+      <p className='lg:text-3xl text-gray-400' data-aos="fade-left" data-aos-duration="2000">Front-End Developer</p>
     </div>
   </div>
       </div>

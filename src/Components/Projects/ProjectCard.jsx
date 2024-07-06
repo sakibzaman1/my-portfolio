@@ -15,7 +15,7 @@ const ProjectCard = ({project}) => {
 
     return (
         <div>
-            <div className="card bg-transparent shadow-lg mb-10 " data-aos="zoom-in" data-aos-delay="100"  data-aos-duration="2000">
+            <div className="card bg-transparent pb-10 shadow-lg mb-10 " data-aos="zoom-in" data-aos-delay="100"  data-aos-duration="2000">
   <figure className="px-4 pt-2">
     <img src={project?.projectLogo} alt="Shoes" className="rounded-full h-30 w-30" />
   </figure>
@@ -27,7 +27,7 @@ const ProjectCard = ({project}) => {
      <div className='flex justify-center items-center lg:gap-10'>
       
      <Link to={project?.LiveLink}>
-     <button className="text-green-400 flex justify-between items-center gap-2 hover:scale-110 transition-transform font-semibold w-20 bg-transparent px-2 "><AirplayIcon></AirplayIcon><p className='text-white'>Live</p> </button>
+     <button className="text-green-400 flex justify-between items-center gap-2 hover:scale-110 transition-transform font-semibold w-20 bg-transparent px-2 "><AirplayIcon></AirplayIcon><p className='text-black'>Live</p> </button>
      </Link>
      <div className="divider divider-horizontal"></div>
       <Link to={project?.githubLink}>

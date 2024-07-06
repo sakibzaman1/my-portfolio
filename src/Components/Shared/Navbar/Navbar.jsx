@@ -17,10 +17,14 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
 import FileOpenIcon from '@mui/icons-material/FileOpen';
 import AddIcCallIcon from '@mui/icons-material/AddIcCall';
-import sakibImage from '../../../assets/Images/sakib-insta.png'
+import sakibImage from '../../../assets/Images/myself.jpeg'
 import resume from '../../../assets/Files/resume.pdf'
 import sakibLogo from '../../../assets/Images/sklogo.png'
 import InfoIcon from '@mui/icons-material/Info';
+import { useState } from 'react';
+import { useEffect } from 'react';
+import './navbar.css'
+import { Drawer, List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -64,6 +68,35 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 
 const Navbar = () => {
+
+  const [backgroundColor, setBackgroundColor] = useState('transparent');
+  const [textColor, setTextColor] = useState('gray');
+  const [visible, setVisible] = useState(true);
+  const [drawerOpen, setDrawerOpen] = useState(false);
+  
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 700) { // Adjust the threshold as needed
+        setVisible(false);
+      } else {
+        setVisible(true);
+      }
+
+      if (window.scrollY > 0) {
+        setBackgroundColor('white'); // Gray with 90% opacity
+        setTextColor('white'); // Gray with 90% opacity
+      } else {
+        setBackgroundColor('transparent');
+        setTextColor('gray');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   
     const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
@@ -100,6 +133,14 @@ const Navbar = () => {
   const handleMobileMenuOpen = (event) => {
     setMobileMoreAnchorEl(event.currentTarget);
   };
+
+  const toggleDrawer = (open) => (event) => {
+    if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
+      return;
+    }
+    setDrawerOpen(open);
+  };
+
 
   const menuId = 'primary-search-account-menu';
   const renderMenu = (
@@ -177,16 +218,51 @@ const Navbar = () => {
     </Menu>
   );
 
+  const renderDrawer = (
+    <Drawer
+      anchor="left"
+      open={drawerOpen}
+      onClose={toggleDrawer(false)}
+    >
+      <Box
+        sx={{ width: 250 }}
+        role="presentation"
+        onClick={toggleDrawer(false)}
+        onKeyDown={toggleDrawer(false)}
+      >
+        <List>
+          <ListItem button>
+            <ListItemIcon><FileOpenIcon /></ListItemIcon>
+            <ListItemText primary="Resume" />
+          </ListItem>
+          <ListItem button onClick={scrollToContact}>
+            <ListItemIcon><AddIcCallIcon /></ListItemIcon>
+            <ListItemText primary="Contact" />
+          </ListItem>
+          <ListItem button onClick={scrollToAbout}>
+            <ListItemIcon><InfoIcon /></ListItemIcon>
+            <ListItemText primary="About" />
+          </ListItem>
+        </List>
+      </Box>
+    </Drawer>
+  );
+
+
   return (
-    <Box className="sticky z-10" sx={{ flexGrow: 1 }}>
-      <AppBar position="static" sx={{ backgroundColor: alpha('#2196f3', 0.9) }}>
+    <Box className="sticky z-10 " sx={{ flexGrow: 1 }}>
+       <AppBar 
+      className={`my-app-bar ${visible ? 'visible' : 'hidden'}`} 
+      sx={{ backgroundColor: backgroundColor, transition: 'background-color 0.5s ease' }}
+    >
         <Toolbar>
           <IconButton
             size="large"
             edge="start"
-            color="inherit"
+            color="gray"
             aria-label="open drawer"
             sx={{ mr: 2 }}
+            onClick={toggleDrawer(true)}
           >
             <MenuIcon />
           </IconButton>
@@ -203,38 +279,39 @@ const Navbar = () => {
               <SearchIcon />
             </SearchIconWrapper>
             <StyledInputBase
+            color='gray'
               placeholder="Search…"
               inputProps={{ 'aria-label': 'search' }}
             />
           </Search>
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-            <IconButton size="large" aria-label="show 4 new mails" color="inherit">
+            <IconButton size="large" aria-label="show 4 new mails" color="gray">
               <Badge>          
                 <a href={resume} download='Resume'>
-                <button  className='flex items-center gap-2'><FileOpenIcon /><small className='text-sm'>Resume</small></button>
+                <button  className='flex items-center gap-2'><FileOpenIcon /><small className={`text-sm ${textColor}`}>Resume</small></button>
                 </a>
               </Badge>
             </IconButton>
             <IconButton
               size="large"
               aria-label="show 17 new notifications"
-              color="inherit"
+              color="gray"
               onClick={scrollToContact}
             >
               <Badge className='flex items-center gap-2'>
-                <AddIcCallIcon /><small className='text-sm'>Contact</small>
+                <AddIcCallIcon /><small className={`text-sm ${textColor}`}>Contact</small>
               </Badge>
             </IconButton>
             <IconButton
               size="large"
               aria-label="show 17 new notifications"
-              color="inherit"
+              color="gray"
               onClick={scrollToAbout}
             >
               
               <Badge className='flex items-center gap-2'>
-                <InfoIcon /><small className='text-sm'>About</small>
+                <InfoIcon /><small className={`text-sm ${textColor}`}>About</small>
               </Badge>
               
             </IconButton>
@@ -247,7 +324,7 @@ const Navbar = () => {
               onClick={handleProfileMenuOpen}
               color="inherit"
             >
-              <img className='w-10 rounded-full border-2 border-blue-500' src={sakibImage} alt="" />
+              <img className='w-10 rounded-full border-2 border-blue-500 h-10' src={sakibImage} alt="" />
             </IconButton>
           </Box>
           <Box sx={{ display: { xs: 'flex', md: 'none' } }}>

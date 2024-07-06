@@ -7,7 +7,7 @@ import router from './Router/router.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <div className='max-w-7xl font-sansSerif'>
+    <div className='max-w-[1440px] text-center mx-auto font-sansSerif'>
     <RouterProvider router={router}></RouterProvider>
     </div>
   </React.StrictMode>,
