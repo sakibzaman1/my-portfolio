@@ -26,11 +26,11 @@ const ProjectCard = ({project}) => {
     <div className="card-actions">
      <div className='flex justify-center items-center lg:gap-10'>
       
-     <Link to={project?.LiveLink}>
+     <Link target='blank' to={project?.LiveLink}>
      <button className="text-green-400 flex justify-between items-center gap-2 hover:scale-110 transition-transform font-semibold w-20 bg-transparent px-2 "><AirplayIcon></AirplayIcon><p className='text-black'>Live</p> </button>
      </Link>
      <div className="divider divider-horizontal"></div>
-      <Link to={project?.githubLink}>
+      <Link target='blank' to={project?.githubLink}>
       <button className="text-black flex items-center justify-between gap-2 hover:scale-110 transition-transform font-semibold w-20 bg-transparent px-2"><GitHubIcon></GitHubIcon><p>Github</p> </button>
       </Link>
      </div>

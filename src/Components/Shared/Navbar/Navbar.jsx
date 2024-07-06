@@ -19,7 +19,7 @@ import FileOpenIcon from '@mui/icons-material/FileOpen';
 import AddIcCallIcon from '@mui/icons-material/AddIcCall';
 import sakibImage from '../../../assets/Images/myself.jpeg'
 import resume from '../../../assets/Files/resume.pdf'
-import sakibLogo from '../../../assets/Images/sklogo.png'
+import sakibLogo from '../../../assets/Images/sakib-logo.png'
 import InfoIcon from '@mui/icons-material/Info';
 import { useState } from 'react';
 import { useEffect } from 'react';

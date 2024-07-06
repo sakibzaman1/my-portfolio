@@ -55,10 +55,10 @@ const ContactForm = () => {
             <h1 className="text-7xl lg:mb-10 mb-10" data-aos="fade-right" data-aos-delay="100"  data-aos-duration="2000">Contact Me</h1>
             <div className="divider w-1/2 mx-auto mb-6">via</div>
             <div className="flex items-center gap-4 lg:gap-16 mt-6 justify-center mx-auto my-10 lg:my-0">
-                <Link to="https://www.linkedin.com/in/md-sakib-uz-zaman-23b3722a4/" data-aos="fade-right" data-aos-delay="200"  data-aos-duration="2000"><LinkedInIcon/></Link>
-                <Link to="https://www.facebook.com/profile.php?id=100058584994066" data-aos="fade-right" data-aos-delay="400"  data-aos-duration="2000"><FacebookIcon/></Link>
-                <Link className="tooltip" data-tip="01533737992" data-aos="fade-right" data-aos-delay="600"  data-aos-duration="2000"><WhatsAppIcon/></Link>
-                <Link to="https://github.com/sakibzaman1" data-aos="fade-right" data-aos-delay="800"  data-aos-duration="2000"><GitHubIcon/></Link>
+                <Link target="blank" to="www.linkedin.com/in/sakibuz-zaman1" data-aos="fade-right" data-aos-delay="200"  data-aos-duration="2000"><LinkedInIcon/></Link>
+                <Link target="blank" to="https://www.facebook.com/sakibuzzaman001" data-aos="fade-right" data-aos-delay="400"  data-aos-duration="2000"><FacebookIcon/></Link>
+                <Link target="blank" className="tooltip" data-tip="01896287005" data-aos="fade-right" data-aos-delay="600"  data-aos-duration="2000"><WhatsAppIcon/></Link>
+                <Link target="blank" to="https://github.com/sakibzaman1" data-aos="fade-right" data-aos-delay="800"  data-aos-duration="2000"><GitHubIcon/></Link>
                 
                 <Link className="tooltip" data-tip="sakibzaman20@gmail.com"  data-aos="fade-right" data-aos-delay="1000"  data-aos-duration="2000"><EmailIcon/></Link>
             </div>

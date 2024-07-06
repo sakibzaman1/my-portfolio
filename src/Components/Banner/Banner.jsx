@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import bannerVideo from '../../assets/videos/banner3.mp4'
+import bannerVideo from '../../assets/videos/banner-portfolio.mp4'
 import AOS from "aos";
 import "aos/dist/aos.css";
 

@@ -23,9 +23,9 @@ const Education = () => {
     <div className="stat-figure text-blue-700">
       <MenuBookIcon></MenuBookIcon>
     </div>
-    <div className="stat-title">Currently</div>
+    <div className="stat-title">Completed</div>
     <div className="stat-value">Bachelor Of Science</div>
-    <div className="stat-desc">jun 2020 - Present</div>
+    <div className="stat-desc">jun 2020 - jun 2024</div>
   </div>
   
   <div className="stat" data-aos="fade-right" data-aos-delay="100"  data-aos-duration="2000">
