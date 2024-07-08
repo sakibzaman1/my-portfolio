@@ -25,6 +25,8 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import './navbar.css'
 import { Drawer, List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
+import { FileCopyOutlined } from '@mui/icons-material';
+import CodeIcon from '@mui/icons-material/Code';
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -106,6 +108,12 @@ const Navbar = () => {
 
   const scrollToAbout = () => {
     const aboutSection = document.getElementById('about');
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+  const scrollToProjects = () => {
+    const aboutSection = document.getElementById('projects');
     if (aboutSection) {
       aboutSection.scrollIntoView({ behavior: 'smooth' });
     }
@@ -274,7 +282,7 @@ const Navbar = () => {
           >
             <img className='w-40 h-20' src={sakibLogo} alt="" />
           </Typography>
-          <Search>
+          {/* <Search>
             <SearchIconWrapper>
               <SearchIcon />
             </SearchIconWrapper>
@@ -283,7 +291,7 @@ const Navbar = () => {
               placeholder="Search…"
               inputProps={{ 'aria-label': 'search' }}
             />
-          </Search>
+          </Search> */}
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
             <IconButton size="large" aria-label="show 4 new mails" color="gray">
@@ -292,6 +300,18 @@ const Navbar = () => {
                 <button  className='flex items-center gap-2'><FileOpenIcon /><small className={`text-sm ${textColor}`}>Resume</small></button>
                 </a>
               </Badge>
+            </IconButton>
+            <IconButton
+              size="large"
+              aria-label="show 17 new notifications"
+              color="gray"
+              onClick={scrollToProjects}
+            >
+              
+              <Badge className='flex items-center gap-2'>
+                <CodeIcon /><small className={`text-sm ${textColor}`}>Projects</small>
+              </Badge>
+              
             </IconButton>
             <IconButton
               size="large"

@@ -15,12 +15,17 @@ const ProjectCard = ({project}) => {
 
     return (
         <div>
-            <div className="card bg-transparent pb-10 shadow-lg mb-10 " data-aos="zoom-in" data-aos-delay="100"  data-aos-duration="2000">
+            <div className="card bg-transparent pb-10 shadow-2xl mb-10 " data-aos="zoom-in" data-aos-delay="100"  data-aos-duration="2000">
   <figure className="px-4 pt-2">
-    <img src={project?.projectLogo} alt="Shoes" className="rounded-full h-30 w-30" />
+    <img src={project?.projectScreenshot} alt="Shoes" className=" h-30 w-30" />
   </figure>
   <div className="card-body p-0 items-center text-center">
-    <h2 className="card-title text-3xl mb-6">{project?.projectTitle}</h2>
+  <div className='flex items-center gap-2'>
+  <figure className="px-4 pt-2">
+    <img src={project?.projectLogo} alt="Shoes" className=" h-12 w-12 rounded-full shadow-2xl border-gray-300 border-2" />
+  </figure>
+    <h2 className="card-title text-3xl mb-6 mt-10">{project?.projectTitle}</h2>
+  </div>
     <p className='h-20 flex-grow mb-4' >{project?.projectDetails}</p>
     <p className='mb-6'>Duration : {project?.duration}</p>
     <div className="card-actions">

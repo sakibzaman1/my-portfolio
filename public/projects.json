@@ -2,6 +2,7 @@
     {
       "id": 1,
       "projectTitle": "Fashion Savvy",
+      "projectScreenshot": "https://i.ibb.co/FgDZQwR/Fashion-Savvy.png",
       "projectLogo": "https://i.postimg.cc/xjJKJbGy/Fashion-savvy-logo-no-Bg.png",
       "projectImages": ["screenshot1.png", "screenshot2.png", "screenshot3.png"],
       "projectDetails": "A Fashion & Apparel website for exploring thousands of products under some renowned brands.",
@@ -13,6 +14,7 @@
     {
       "id": 2,
       "projectTitle": "Soul Fit Connect",
+      "projectScreenshot": "https://i.ibb.co/F5L1DRk/Soul-Fit-Connect.png",
       "projectLogo": "https://i.ibb.co/cXFNP7Z/Soul-Fit-Connect-horizontal-logo-removebg-preview.png",
       "projectImages": ["product1.png", "product2.png", "product3.png"],
       "projectDetails": "An offline service sharing web application for providing fitness guidelines to the people, sincere about their own health & fitness.",
@@ -24,6 +26,7 @@
     {
       "id": 3,
       "projectTitle": "Tourist Guide BD",
+      "projectScreenshot": "https://i.ibb.co/9TdwkcQ/Tourist-Guide-Bd.png",
       "projectLogo": "https://i.ibb.co/h2x7d3k/tourist-Guide-removebg-preview.png",
       "projectImages": ["portfolio1.png", "portfolio2.png", "portfolio3.png"],
       "projectDetails": "An online platform that provides comprehensive information and resources for travelers seeking guidance on popular destinations in Bangladesh.",
@@ -34,3 +37,7 @@
     }
   ]
   
+
+  
+
+
